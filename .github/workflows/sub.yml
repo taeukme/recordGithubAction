@@ -10,6 +10,5 @@ jobs:
     - name: 1. 변수출력
       env:
         ID: ${{ github.actor }} 
-        MYASNAME:  ${{ secrets.ASNAME }} 
-      run: | 
-        echo "내 아이디는 $ID이고 별칭은 $MYASNAME입니다."
+        MYASNAME: ${{ secrets.ASNAME }} 
+      run: echo "내 아이디는 $ID 이고 별칭은 $MYASNAME 입니다."
