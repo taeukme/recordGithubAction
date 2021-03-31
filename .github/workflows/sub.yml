@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: 2. 환경 변수로 출력
+    - name: 1. 환경 변수로 출력
       env:
         KEY: ${{ secrets.MY_KEY }}
       run: echo "$KEY"
-    - name: 1. python에서 변수 출력
+    - name: 2. python에서 변수 출력
       run: python secretkey.py
