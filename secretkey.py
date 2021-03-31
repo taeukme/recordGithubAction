@@ -1,1 +1,1 @@
-print(os.getenv(MY_KEY_VALUE))
+print(os.getenv(MY_KEY))
