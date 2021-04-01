@@ -43,7 +43,7 @@ for i in range(len(날짜)):
         '거래량':거래량[i],
         })
 
-with open('fetchtestdata.json', "w", encoding="UTF-8-sig") as f_write:
+with open('json/fetchtestdata.json', "w", encoding="UTF-8-sig") as f_write:
     json.dump(l, f_write, ensure_ascii=False, indent=4)
 
 ll = [{
@@ -57,5 +57,5 @@ ll = [{
       "순익" : 순익
 }]
 
-with open('fetchtestbasicdata.json', "w", encoding="UTF-8-sig") as f_write:
+with open('json/fetchtestbasicdata.json', "w", encoding="UTF-8-sig") as f_write:
     json.dump(ll, f_write, ensure_ascii=False, indent=4)
