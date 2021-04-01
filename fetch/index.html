@@ -26,6 +26,9 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="https://github.com/paullabkorea/recordGithubAction">Github repo</a>
               </li>
+	      <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Main</a>
+              </li>
             </ul>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -93,7 +96,7 @@
         </div>
     </div>
     <script>
-        fetch('https://raw.githubusercontent.com/paullabkorea/recordGithubAction/main/fetchtestbasicdata.json').then(function(response){
+        fetch('https://raw.githubusercontent.com/paullabkorea/recordGithubAction/main/json/fetchtestbasicdata.json').then(function(response){
             response.json().then(function(basicdata){
                 document.getElementById('시가총액').innerHTML = '시가총액 : ' + basicdata[0].시가총액 + '억원'
                 document.getElementById('시가총액순위').innerHTML = '시가총액순위 : ' + basicdata[0].시가총액순위 + '위'
@@ -105,7 +108,7 @@
             })
         })
 
-        fetch('https://raw.githubusercontent.com/paullabkorea/recordGithubAction/main/fetchtestdata.json').then(function(response){
+        fetch('https://raw.githubusercontent.com/paullabkorea/recordGithubAction/main/json/fetchtestdata.json').then(function(response){
             response.json().then(function(data){
                 let tableBodyData = [];
                 for (let variable of data) {
