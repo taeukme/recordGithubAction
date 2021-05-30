@@ -20,8 +20,6 @@ jobs:
         python crawler/fetchDataCrawler.py
     - name: Commit files
       run: |
-        git config --local user.email "paullabkorea@gmail.com"
-        git config --local user.name "paullabkorea"
         git add .
         git commit -m "Run crawler and update current data"
     - name: Push changes
